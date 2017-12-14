@@ -7,3 +7,8 @@ at the start of the line and the more hastags used, the lower the headline level
 Github process: https://guides.github.com/introduction/flow/
 
 Github GUI (the one I use on Windows): https://desktop.github.com/
+
+I am initiating with a copy of the Shiny App that I showed at my jobtalk.
+Viewable on shinyapps.io: https://wmirecon.shinyapps.io/vgn-v5_10oct17/
+
+Original Repo: https://github.com/wmirecon/Visualizing_Gov_Nets
