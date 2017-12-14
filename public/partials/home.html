@@ -1,0 +1,39 @@
+<div class='container-fluid'>
+    <div class='row'>
+        <form name='forms.awsForm' ng-init="awsForm={};" class='form' novalidate>
+            <div class='form-group'>
+                <label for 'inputFile'>File</label>
+                <input type='file' file-upload ng-model='forms.awsForm.inputFile' class='form-control-file' name='inputFile' id='inputFile' required>
+            </div>
+            <button type='submit' class='btn btn-dark' ng-disabled="!forms.awsForm.$valid" ng-click='submit(forms.awsForm.inputFile)'>Submit</button>
+        </form>
+    </div>
+    <div class='row'>
+        <div ng-show="fileExists" class='server-pic'>
+            <img src="data:{{fileType}};base64,{{arrayBufferToBase64(serverFile.data)}} ">
+        </div>
+    </div>
+    <div class='row'>
+        <button ng-show="fileExists" type="button" class='btn btn-danger' ng-click="clear()">Clear</button>
+    </div>
+
+    <hr/>
+    <div class='row'>
+        <table class="table table-hover table-responsive">
+            <thead class="thead-dark">
+                <tr>
+                    <th>File Name</th>
+                    <th>Path</th>
+                    <th>File Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in table">
+                    <td>{{item.fileName.S}}</td>
+                    <td>{{item.path.S}}</td>
+                    <td>{{item.type.S}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-primary" ng-click="loadTable()">Load Table</button>
+    </div>

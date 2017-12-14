@@ -1,0 +1,24 @@
+@keyframes blink {
+    0% {
+        border-color: #123456;
+    }
+    50% {
+        border-color: #12345660;
+    }
+    100% {
+        border-color: #123456;
+    }
+}
+
+.server-pic {
+    display: inline-block;
+    max-width: 1000px;
+    border: 10px solid #123456;
+    transition: border 0.5s ease-in-out;
+    -webkit-transition: border 0.5s ease-in-out;
+    animation: blink normal 1.5s infinite ease-in-out;
+}
+
+.server-pic>img {
+    max-width: 990px;
+}
