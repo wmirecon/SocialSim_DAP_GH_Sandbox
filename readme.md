@@ -12,3 +12,13 @@ I am initiating with a copy of the Shiny App that I showed at my jobtalk.
 Viewable on shinyapps.io: https://wmirecon.shinyapps.io/vgn-v5_10oct17/
 
 Original Repo: https://github.com/wmirecon/Visualizing_Gov_Nets
+
+
+===========================
+## GitLab:
+
+Wiki:
+https://gitlab.com/caslab_ucf/Social_Sim/Git_Test/wikis/Gitlab-Tutorial
+
+Repo:
+https://gitlab.com/caslab_ucf/Social_Sim/Git_Test
